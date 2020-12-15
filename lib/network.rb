@@ -29,4 +29,8 @@ class Network
     end
     actor_names
   end
+
+  def shows_by_actor
+    
+  end
 end

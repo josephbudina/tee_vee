@@ -186,7 +186,6 @@ pry(main)> nbc.shows_by_actor
 #      "Amy Poehler" => [parks_and_rec],
 #      "Nick Offerman" => [parks_and_rec]
 #    }
-
 pry(main)> nbc.prolific_actors
 # => ["David Hasselhoff"]
 
