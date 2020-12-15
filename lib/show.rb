@@ -20,4 +20,13 @@ class Show
       character.salary
     end.actor
   end
+
+  def actors
+    actor_names = []
+
+    @characters.each do |character|
+      actor_names << character.actor
+    end
+    actor_names
+  end
 end
