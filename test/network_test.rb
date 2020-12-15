@@ -35,4 +35,16 @@ class NetworkTest < Minitest::Test
 
     assert_equal [@kitt], @nbc.main_characters
   end
+
+  def test_it_can_find_actors_by_show
+    @nbc.add_show(@knight_rider)
+    @nbc.add_show(@parks_and_rec)
+
+    expected = {
+      @knight_rider  => ["David Hasselhoff", "William Daniels"],
+      @parks_and_rec => ["Amy Poehler", "Nick Offerman"]
+    }
+
+    assert_equal expected, @nbc.actors_by_show
+  end
 end
